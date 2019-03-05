@@ -1,0 +1,35 @@
+{
+  "name": "stasis-docs",
+  "version": "1.0.0",
+  "description": "Stasis documentation",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV=production stasis-cli build -c stasis.config.json src",
+    "serve": "stasis-cli serve -c stasis.config.json src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Gioni06/stasis-docs.git"
+  },
+  "keywords": [
+    "Stasis",
+    "JAM",
+    "static",
+    "site",
+    "generator",
+    "static",
+    "site",
+    "docs"
+  ],
+  "author": "Jonas Duri",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Gioni06/stasis-docs/issues"
+  },
+  "homepage": "https://github.com/Gioni06/stasis-docs#readme",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "node-fetch": "^2.3.0",
+    "stasis-generator": "^0.3.0"
+  }
+}

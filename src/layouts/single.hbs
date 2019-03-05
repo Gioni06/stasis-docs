@@ -1,0 +1,63 @@
+<!doctype html>
+<html class="h-100" lang="{{this.frontmatter.lang}}">
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    {{this.title}}
+  </title>
+  <meta name="description" content="{{this.frontmatter.description}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {{> header}}
+</head>
+
+<body class="d-flex flex-column h-100">
+
+<!--[if lte IE 9]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+<![endif]-->
+
+<main class="flex-shrink-0 mb-5">
+  {{> navigation}}
+  <div class="container mt-5">
+    <div class="row">
+      <aside class="col-sm-12 col-lg-3">
+        <div class="dropdown d-sm-none">
+          <button class="btn btn-block btn-dark" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-chevron-down" aria-hidden="true"></i>&nbsp;&nbsp;Select a page
+          </button>
+          <div class="dropdown-menu w-100 mt-3" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="/">Home</a>
+            <a class="dropdown-item" href="/docs">Docs</a>
+            <a class="dropdown-item" href="https://github.com/Gioni06/stasis-generator/issues">Contribute</a>
+          </div>
+        </div>
+        <div class="d-none d-sm-block">
+          <div class="">
+            <ul class="list-group list-group-flush d-none d-sm-block">
+              <li class="list-group-item border-0 pl-0 bg-transparent">
+                <a class="w-100 h-100 d-inline-block" href="/">Home</a>
+              </li>
+              <li class="list-group-item border-0 pl-0 bg-transparent">
+                <a class="w-100 h-100 d-inline-block" href="/docs">Docs</a>
+              </li>
+              <li class="list-group-item border-0 pl-0 bg-transparent">
+                <a class="w-100 h-100 d-inline-block" href="https://github.com/Gioni06/stasis-generator/issues">Contribute</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <div class="col-lg-9 col-sm-12 mt-5 mt-lg-0">
+        <div class="stasis-feature stasis-markdown">
+          {{{ body }}}
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+{{> footer}}
+{{> scripts}}
+</body>
+
+</html>
