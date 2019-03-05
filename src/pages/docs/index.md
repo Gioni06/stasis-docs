@@ -6,7 +6,7 @@ desc: Read the documentation for the Stasis static site generator.
 layout: single
 features:
   - title: Easy content creation
-    body: Write your content with the simple and intuitive Markdown format. Define layouts, titles and any number of arbitrary data using Frontmatter.
+    body: Write your content with the simple and intuitive Markdown format. Define layouts, titles and any number of arbitrary data using Front Matter.
     link:
       label: Get Started
       target: /docs
