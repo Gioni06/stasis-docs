@@ -1,6 +1,7 @@
 ---
 title: Documentation
 uid: docs
+lang: en
 desc: Read the documentation for the Stasis static site generator.
 layout: single
 features:

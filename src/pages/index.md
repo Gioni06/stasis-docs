@@ -1,5 +1,6 @@
 ---
 title: Stasis
+lang: en
 uid: rootPage
 desc: Stasis is a simple and easy to use static site generator
 layout: base
